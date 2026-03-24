@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitMindFlow - Level Up Your Productivity!</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body class="bg-gradient-to-br from-indigo-900 to-purple-800 min-h-screen text-white">
+    <div id="confetti-canvas" class="fixed inset-0 pointer-events-none"></div>
+    
+    <header class="p-4 flex justify-between items-center">
+        <div class="flex items-center gap-4">
+            <img src="/assets/logo.svg" class="h-10" alt="GitMindFlow">
+            <div class="flex flex-col">
+                <span class="text-xl font-bold">Level 12</span>
+                <div class="w-48 h-2 bg-gray-700 rounded-full">
+                    <div class="w-3/4 h-full bg-green-400 rounded-full animate-pulse"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flex items-center gap-6">
+            <div class="flex items-center gap-2">
+                <span class="text-yellow-400 text-2xl">🔥</span>
+                <span class="font-bold">23 Day Streak!</span>
+            </div>
+            <button class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg font-bold animate__animated animate__pulse animate__infinite">
+                Share Achievement
+            </button>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white/10 p-6 rounded-xl backdrop-blur-sm">
+                <h2 class="text-2xl font-bold mb-4">Daily Challenges</h2>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3">
+                        <input type="checkbox" class="w-5 h-5 rounded">
+                        <span>Create 3 mind maps</span>
+                        <span class="ml-auto text-yellow-400">+50 XP</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <input type="checkbox" class="w-5 h-5 rounded">
+                        <span>Share with a friend</span>
+                        <span class="ml-auto text-yellow-400">+100 XP</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-white/10 p-6 rounded-xl backdrop-blur-sm">
+                <h2 class="text-2xl font-bold mb-4">Recent Achievements</h2>
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="achievement-badge animate__animated animate__bounceIn">
+                        <img src="/assets/badges/creative-genius.svg" class="w-16 h-16 mx-auto">
+                        <span class="text-sm text-center block mt-2">Creative Genius</span>
+                    </div>
+                    <div class="achievement-badge animate__animated animate__bounceIn">
+                        <img src="/assets/badges/team-player.svg" class="w-16 h-16 mx-auto">
+                        <span class="text-sm text-center block mt-2">Team Player</span>
+                    </div>
+                    <div class="achievement-badge animate__animated animate__bounceIn">
+                        <img src="/assets/badges/productivity-master.svg" class="w-16 h-16 mx-auto">
+                        <span class="text-sm text-center block mt-2">Productivity Master</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white/10 p-6 rounded-xl backdrop-blur-sm">
+                <h2 class="text-2xl font-bold mb-4">Leaderboard</h2>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3 bg-white/5 p-3 rounded-lg">
+                        <span class="text-2xl">👑</span>
+                        <img src="https://api.dicebear.com/6.x/avataaars/svg?seed=Felix" class="w-10 h-10 rounded-full">
+                        <span>Sarah K.</span>
+                        <span class="ml-auto font-bold">12,450 XP</span>
+                    </div>
+                    <div class="flex items-center gap-3 bg-white/5 p-3 rounded-lg">
+                        <span class="text-2xl">🥈</span>
+                        <img src="https://api.dicebear.com/6.x/avataaars/svg?seed=John" class="w-10 h-10 rounded-full">
+                        <span>You</span>
+                        <span class="ml-auto font-bold">10,230 XP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="fixed bottom-4 right-4 flex gap-4">
+        <button class="bg-purple-500 hover:bg-purple-600 p-4 rounded-full shadow-lg animate__animated animate__bounce animate__infinite">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+            </svg>
+        </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script>
+        // Trigger confetti on achievements
+        function celebrateAchievement() {
+            confetti({
+                particleCount: 100,
+                spread: 70,
+                origin: { y: 0.6 }
+            });
+        }
+
+        // Add interactive elements
+        document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+            checkbox.addEventListener('change', () => {
+                if (checkbox.checked) {
+                    celebrateAchievement();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
