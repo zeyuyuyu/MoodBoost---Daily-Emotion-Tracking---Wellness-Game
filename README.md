@@ -2,23 +2,26 @@
 
 ## Overview
 
-MoodBoost is an open-source project that provides a daily emotion tracking and wellness game for users. The application allows users to log their mood and feelings, and provides insights and recommendations to improve their overall well-being.
+MoodBoost is an open-source project that provides a powerful and customizable platform for tracking your daily emotions and overall well-being. The application includes a simple and intuitive user interface, allowing users to quickly log their mood, energy levels, and other wellness indicators on a daily basis.
 
-## New Feature: Wellness Tracking
+## New Features
 
-We are excited to introduce a new powerful feature to MoodBoost - Wellness Tracking. This feature allows users to track various aspects of their overall wellness, including:
+### Daily Mood Tracking
 
-- Physical Activity: Users can log their daily physical activity, such as steps taken, minutes of exercise, or calories burned.
-- Sleep Quality: Users can track the quality and duration of their sleep, and receive recommendations for improving sleep habits.
-- Nutrition: Users can log their daily food intake and receive personalized nutrition insights and tips.
-- Stress Management: Users can track their stress levels and access guided relaxation exercises and mindfulness practices.
+Users can now log their mood on a scale from 1-10, providing a detailed snapshot of their emotional state throughout the week, month, and year. The app will generate personalized insights and trends to help users better understand their mood patterns and identify potential triggers.
 
-The Wellness Tracking feature is seamlessly integrated into the MoodBoost application, providing users with a comprehensive view of their emotional and physical well-being. Users can set personal goals, receive progress updates, and access a variety of resources to support their overall health and happiness.
+### Wellness Indicators
+
+In addition to mood tracking, users can now log various wellness indicators such as energy levels, sleep quality, stress levels, and physical activity. This comprehensive data will enable users to holistically monitor their overall well-being and make informed decisions about their lifestyle and self-care practices.
+
+### Customizable Goals and Reminders
+
+Users can now set personalized goals and receive tailored reminders to help them stay on track with their mood and wellness tracking. For example, users can set a goal to maintain a certain mood level or achieve a specific level of physical activity, and the app will provide timely notifications to encourage progress.
+
+### Shareable Insights and Reports
+
+Users can now generate shareable reports and insights, allowing them to easily share their mood and wellness data with healthcare providers, therapists, or loved ones. This feature promotes accountability and enables collaborative support for the user's well-being journey.
 
 ## Getting Started
 
-To get started with MoodBoost, please refer to the installation and setup instructions in the [CONTRIBUTING.md](CONTRIBUTING.md) file. If you have any questions or feedback, feel free to reach out to the project maintainers or submit an issue on the [GitHub repository](https://github.com/your-username/MoodBoost).
-
-## License
-
-MoodBoost is licensed under the [MIT License](LICENSE).
+To get started with MoodBoost, please visit the project's GitHub repository at [github.com/MoodBoost/Daily-Emotion-Tracking-&-Wellness-Game](https://github.com/MoodBoost/Daily-Emotion-Tracking-&-Wellness-Game). Follow the installation instructions and start tracking your mood and wellness today!
